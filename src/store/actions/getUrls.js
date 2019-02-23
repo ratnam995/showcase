@@ -3,7 +3,6 @@ import axios from "axios";
 export const getURLs = imageType => {
   return dispatch => {
     dispatch(getURLsStarted());
-    console.log("imageType", imageType);
     axios
       .get(
         "https://api.unsplash.com/photos/search?client_id=" +
@@ -20,20 +19,17 @@ export const getURLs = imageType => {
         let data = res.data;
         if (data && data.length) {
           data = data.map(singleData => {
-            console.log("singleData", singleData);
             return {
               id: singleData["id"],
               url: singleData["urls"]["full"]
             };
           });
         }
-        console.log(".then success", data);
         let finalData = {};
         finalData[imageType] = data;
         dispatch(addTodoSuccess(finalData));
       })
       .catch(err => {
-        console.log(".catch success", err);
         dispatch(addTodoFailure(err));
       });
   };
