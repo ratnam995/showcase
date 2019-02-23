@@ -1,0 +1,42 @@
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 10px;
+
+  .slider-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    .slide {
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.dots-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  z-index: 9999;
+  padding: 5px 0;
+
+  .dot {
+    background: #222;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .active {
+    background: #fff;
+  }
+}
