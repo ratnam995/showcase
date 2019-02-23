@@ -41,7 +41,7 @@ class ProjectShowcase extends React.Component {
     ) {
       setInterval(() => {
         this.goToNextSlide();
-      }, 3000);
+      }, 5000);
     }
   }
 
