@@ -1,8 +1,8 @@
 .slider {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
+  width: 650px;
+  margin: 10px;
+  height: 350px;
   overflow: hidden;
   white-space: nowrap;
   border-radius: 10px;
@@ -19,6 +19,7 @@
     }
   }
 }
+
 
 .dots-container {
   position: absolute;
@@ -74,3 +75,105 @@
     width: 100%;
   }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .slider {
+    position: relative;
+    width: 315px !important;
+    margin: 20px 0px !important;
+    height: 200px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 10px;
+    float: none !important;
+  
+    .slider-wrapper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+  
+      .slide {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  .slider {
+    position: relative;
+    width: 375px !important;
+    margin: 20px !important;
+    height: 225px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 10px;
+    float: none !important;
+  
+    .slider-wrapper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+  
+      .slide {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .slider {
+    position: relative;
+    width: 425px !important;
+    margin: 10px !important;
+    height: 275px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 10px;
+    float: none !important;
+  
+    .slider-wrapper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+  
+      .slide {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .slider {
+    position: relative;
+    width: 400px !important;
+    margin: 10px !important;
+    height: 300px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    border-radius: 10px;
+    float: left !important;
+  
+    .slider-wrapper {
+      position: relative;
+      height: 100%;
+      width: 100%;
+  
+      .slide {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+}
+

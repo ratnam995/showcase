@@ -5,7 +5,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header" /> */}
+        <main className="App-main">
           <div style={{}}>
             <ProjectShowcase
               height={"350px"}
@@ -18,7 +19,7 @@ class App extends Component {
               imageType={"cars"}
             />
           </div>
-        </header>
+        </main>
       </div>
     );
   }
