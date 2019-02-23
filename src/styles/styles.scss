@@ -40,3 +40,37 @@
     background: #fff;
   }
 }
+
+.progress-container {
+  display: block;
+  color: #000 !important;
+  background-color: #f1f1f1 !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  z-index: 9998;
+  padding: 5px 0;
+  opacity: 0.8;
+}
+
+.progress-container:before,
+:after {
+  box-sizing: inherit;
+}
+
+.progress {
+  display: block;
+  color: #000 !important;
+  background-color: #9e9e9e !important;
+  animation: fill 3s linear infinite;
+}
+
+@keyframes fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

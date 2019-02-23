@@ -5,6 +5,7 @@ import { get } from "lodash";
 import { getURLs } from "../../store/actions/getUrls";
 
 import DotGroup from "../dots/dot-group";
+import ProgressBar from "../progress-bar";
 import ImageView from "../image-view";
 
 require("../../styles/styles.scss");
@@ -108,6 +109,8 @@ class ProjectShowcase extends React.Component {
               })}
             </div>
             <DotGroup index={currentIndex} images={urlList} />
+            <ProgressBar />
+            {/* <ProgressBar progress={progress} /> */}
           </React.Fragment>
         )}
       </div>
